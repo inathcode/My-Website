@@ -1,0 +1,170 @@
+@media(max-width: 920px) {
+	.hamburger{
+		display: block;
+	}
+	.hamburger.active .bar:nth-child(2){
+		opacity: 0;
+	}
+	.hamburger.active .bar:nth-child(1){
+		transform: translateY(8px) rotate(45deg);
+	}
+	.hamburger.active .bar:nth-child(3){
+		transform: translateY(-8px) rotate(-45deg);
+	}
+
+	.nav-menu{
+		position: fixed;
+		left: -100%;
+		background-color: #df6915;
+		width: 100%;
+		transition: 0.3s;
+		text-align: center;
+		flex-direction: column;
+		top: 70px;
+		height: 100vh;
+	}
+
+	.nav-link{
+		padding: .7rem;
+		color: white;
+	}
+
+	.nav-link:hover{
+		background-color: #df6915;
+		color: white;
+	}
+	.nav-item{
+		margin: .8rem 0;
+	}
+
+	.nav-menu.active{
+		left: 0;
+	}
+}
+
+@media(max-width: 865px) {
+
+	footer{
+	height: auto;
+}
+	.footer{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.body-1-img-text{
+	flex-direction: column;
+	padding: 1rem;
+}
+
+.body-1-img div{
+	width: 15rem;
+}
+}
+
+@media(max-width: 795px) {
+	.form{
+	flex-direction: column;
+}
+}
+
+@media(max-width: 665px) {
+
+
+.homepage{
+	height: auto;
+}
+	.homepage-text{
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+}
+		.footer{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.body-1-p{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 1rem;
+}
+
+.p1{
+	width: 15rem;
+}
+}
+
+@media(max-width: 530px) {
+
+.body-1-p{
+	display: grid;
+	grid-template-columns: 1fr;
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.menu{
+gap: 1rem;
+
+}
+@media(max-width: 500px) {
+	.menu{
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.body-1-img{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+}
+
+@media(max-width: 460px) {
+	.navbar{
+padding: 2rem;
+height: .8rem;
+}
+
+.form img{
+	height: 15rem;
+}
+
+}
+@media(max-width: 355px) {
+	.homepage-text-p{
+	font-size: .8rem;
+}
+
+.homepage-text-img img{
+	height: 15rem;
+}
+}
+@media(max-width: 345px) {
+	.form img{
+	height: 10rem;
+}
+.form-1 input{
+	width: 18rem;
+	padding: .8rem 0;
+}
+.form-book input, select{
+	width: 18rem;
+	padding: .8rem;
+}
+.form-2 button{
+width: 7rem;
+font-size: .6rem;
+}
+.form-1 button{
+width: 7rem;
+}
+
+.newsletter input{
+	padding: .6rem;
+	width: 10rem;
+}
+.newsletter button{
+	padding: .6rem;
+}
+}
